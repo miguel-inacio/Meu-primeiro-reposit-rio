@@ -1,5 +1,6 @@
 .ordered-lists {
   background-color: yellow;
+  font-weight: bold;
 }
 
 ol li:nth-of-type(1) {
@@ -31,3 +32,6 @@ h1, h3 {
   color: red;
 }
 
+li {
+  font-size: 20px;
+}
