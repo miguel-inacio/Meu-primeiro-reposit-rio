@@ -1,6 +1,11 @@
 h1, p {
   text-align: center;
 }
-li:hover{
+
+li:hover {
   background-color: darksalmon;
+}
+
+li:active {
+  color: whitesmoke;
 }
