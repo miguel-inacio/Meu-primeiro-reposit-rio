@@ -35,3 +35,11 @@ h1, h3 {
 li {
   font-size: 20px;
 }
+
+.three-languages {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
