@@ -30,3 +30,8 @@ h1 {
   width: 300px;
   display: inline-block;
 }
+
+#section {
+  display: block;
+  margin-left: 540px;
+}
