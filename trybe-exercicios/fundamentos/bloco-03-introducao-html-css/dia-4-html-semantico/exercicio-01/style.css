@@ -18,6 +18,8 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+  display: inline-block;
+  margin-left: 420px;
 }
 
 .third {
@@ -26,4 +28,5 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+  display: inline-block;
 }
