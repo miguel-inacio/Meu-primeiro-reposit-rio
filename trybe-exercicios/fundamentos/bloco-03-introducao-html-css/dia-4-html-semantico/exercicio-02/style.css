@@ -1,0 +1,17 @@
+.aside-nav {
+  padding: 15px;
+  background-color: gray;
+  display: inline-block;
+  float: right;
+  width: 50px 30%;
+  text-align: center;
+}
+
+.section-article-info {
+  float: left;
+  width: 70%;
+}
+
+.article-section-1 {
+  display: inline-block;
+}

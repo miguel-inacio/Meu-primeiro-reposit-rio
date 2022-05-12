@@ -43,3 +43,23 @@ li {
 .java {
   background-color: pink;
 }
+
+#aliados li:nth-of-type(1):hover a {
+  color: orange;
+}
+
+#aliados li:nth-of-type(2):hover a {
+  color: green;
+}
+
+#aliados li:nth-of-type(3):hover a {
+  color: black;
+}
+
+#aliados li:nth-of-type(4):hover a {
+  color: yellow;
+}
+
+#aliados li:nth-of-type(5):hover a {
+  color: green;
+}
