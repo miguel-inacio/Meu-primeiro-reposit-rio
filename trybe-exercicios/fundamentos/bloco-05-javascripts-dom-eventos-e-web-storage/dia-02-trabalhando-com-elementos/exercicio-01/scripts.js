@@ -32,3 +32,34 @@ let terceiroFilho = ondeVoceEsta.nextElementSibling;
 
 let terceiroFilho2 = pai.lastElementChild.previousElementSibling;
 
+// 1.1
+
+let novoIrmão = document.createElement("section");
+pai.appendChild(novoIrmão);
+
+// 1.2
+
+let novoFilhoOndeVoceEsta = document.createElement("section");
+ondeVoceEsta.appendChild(novoFilhoOndeVoceEsta);
+
+// 1.3
+
+let filhoDoPrimeiroFilhoDoFilho = document.createElement("section");
+primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+// 1.4
+
+let terceiroFilho3 = filhoDoPrimeiroFilhoDoFilho.parentElement.nextElementSibling;
+
+// 2.1
+//Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+let paiDoPai = document.getElementById("paiDoPai");
+
+for (let index = paiDoPai.childNodes[0]; index = paiDoPai.lastChild; index += 1) {
+  let paiDoPaiTrashBin = [];
+  if (paiDoPai[index].id !== "pai" && paiDoPai[index] !== "elementoOndeVoceEsta" && paiDoPai[index] !== "primeiroFilhoDoFilho") {
+    paiDoPaiTrashBin.push(paiDoPai[index]);
+    paiDoPai.removeChild(paiDoPaiTrashBin);
+  }
+}
