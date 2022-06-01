@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe Trip</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <h1 class="shadow-sm p-3 mb-5 bg-body rounded">Trybe Trip</h1>
+  <main>
+    <form action="get" id="form"></form>
+      <section id="data-container" class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <label for="name-input" class="form-label" id="name">Nome completo:</label>
+        <input required type="text" id="name-input" maxlength="40"   minlength="10" class="form-control">
+
+        <br>
+
+        <label for="email-input" class="form-label">E-mail:</label>
+        <input required type="email" id="email-input" maxlength="50"   minlength="10" class="form-control">
+      </section>
+
+      <br>
+
+      <section class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <input type="radio" name="destination" id="option-cidade" class="destination" class="form-check">
+        <label for="option-cidade" class="form-label">Cidade</label>
+
+        <input type="radio" name="destination" id="option-campo" class="destination" class="form-check">
+        <label for="option-campo" class="form-label">Campo</label>
+
+        <input type="radio" name="destination" id="option-praia" class="destination" class="form-check">
+        <label for="option-praia" class="form-label">Praia</label>
+
+        <input type="radio" name="destination" id="option-montanhas" class="destination" class="form-check">
+        <label for="option-montanhas" class="form-label">Montanhas</label>
+      </section>
+
+      <section class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <label for="why-me" class="form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea name="why-me" id="why-me" cols="30" rows="10" maxlength="500"></textarea>
+      </section>
+
+      <section class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <label for="datepicker" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+        <input type="text" name="date" id="datepicker" class="form-control">
+      </section>
+
+      <section class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <label for="opportunities" class="form-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <input type="checkbox" name="opportunities" id="opportunities" class="checkbox" class="form-control">
+
+        <br>
+
+        <label for="agrees" class="form-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input required type="checkbox" name="agrees" id="agrees" class="checkbox" class="form-control">
+      </section>
+
+      <section class="shadow-sm p-3 mb-5 bg-body rounded container">
+        <button type="submit" id="send-button" class="btn btn-success">Enviar</button>
+        <button type="reset" id="clear-button" class="btn btn-danger">Apagar tudo</button>
+      </section>
+    </form>
+  </main>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="pikaday.js"></script>
+  <script>
+  
+  </script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</body>
+</html>
