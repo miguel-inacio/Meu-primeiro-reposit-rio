@@ -54,10 +54,12 @@ const changeX = (frase) => {
 
 console.log(changeX('Tryber x aqui!'))
 
-const message = (changeX()) => {
-  `${frase}
+const message = (string) => {
+  return `${string}
   
   Minhas cinco principais habilidade são:
   
-  ${principaisSkills.sort()}`;
+  ${principaisSkills.sort().join(' ')}`;
 }
+
+console.log(message(changeX('Tryber x aqui!')));
