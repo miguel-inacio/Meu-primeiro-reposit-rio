@@ -37,10 +37,10 @@
       document.getElementById('result').innerText = `Resultado: ${result}`;
       } catch (error) {
         document.getElementById('result').innerText = `${error.message}`;
-      }
+      } finally {
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
-
+      }
     }
     window.onload = () => {
       const button = document.getElementById('button');
