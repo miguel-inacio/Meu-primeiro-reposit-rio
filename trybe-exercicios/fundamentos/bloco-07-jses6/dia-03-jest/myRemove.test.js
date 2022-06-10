@@ -9,5 +9,5 @@ describe('Check removals at myRemove', () => {
   });
   it('Returns unchanged when myRemove([1, 2, 3, 4], 5)', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toContain(1, 2, 3, 4);
-  });
+  }); 
 })
