@@ -8,6 +8,6 @@ describe('sum functionality', () => {
     expect(sum(0,0)).toEqual(0);
   });
   it('Returns an error when a parameter is not a number', () => {
-    expect(() => sum(4, '5')).toThrowError();
-  })
+    expect(() => sum(4, '5')).toThrowError('Os parâmetros precisam ser números!');
+  });
 });
