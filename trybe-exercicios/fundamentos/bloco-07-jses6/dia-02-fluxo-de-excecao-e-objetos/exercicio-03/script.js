@@ -87,7 +87,32 @@ const isEntry = (object, key, value) => {
   return validation;
 }
 
-console.log(isEntry(lesson3, 'turno', 'noite'));
-// Output: true,
-console.log(isEntry(lesson3, 'materia', 'Maria Clara'));
-// Output: false
+
+// Bônus 1
+
+const countMathStudents = (object) => {
+  let counter = 0;
+  const subject = Object.keys(object);
+  for (let index in subject) {
+    console.log(subject[index]);
+    if (object[subject[index]].materia === 'Matemática') {
+      counter += object[subject[index]].numeroEstudantes;
+    }
+  }
+  return `${counter} estudantes assistiram às aulas de Matemática.`;
+}
+
+console.log(countMathStudents(allLessons));
+
+// Bônus 2
+
+const createReport = (object, professor) => {
+  const lessonsGiven = 
+}
+
+console.log(createReport(allLessons, 'Maria Clara'))
+/* {
+  professor: 'Maria Clara',
+  aulas: [ 'Matemática', 'Matemática' ],
+  estudantes: 30
+} */
