@@ -53,7 +53,7 @@ listValues(lesson1);
 //5
 
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
-// console.log(allLessons);
+console.log(allLessons);
 
 6//
 
@@ -106,13 +106,44 @@ console.log(countMathStudents(allLessons));
 
 // Bônus 2
 
-const createReport = (object, professor) => {
-  const lessonsGiven = 
-}
+// const createReport = (object, professor) => {
+//   const materias = 
+//   const lessonsGiven = {
+//     professor: '',
+//     aulas: [],
+//     estudantes: ''
+//   }
 
-console.log(createReport(allLessons, 'Maria Clara'))
+
+//   if (object.professor = professor) {
+//     lessonsGiven.professor = professor;
+//     lessonsGiven.aulas = object.materia;
+//     lessonsGiven.estudantes = object.numeroEstudantes;
+//   }
+//   return lessonsGiven;
+// }
+
+// console.log(createReport(allLessons, 'Maria Clara'))
 /* {
   professor: 'Maria Clara',
   aulas: [ 'Matemática', 'Matemática' ],
   estudantes: 30
 } */
+
+
+//allLessons:
+// { lesson1:
+//   { materia: 'Matemática',
+//     numeroEstudantes: 20,
+//     professor: 'Maria Clara',
+//     turno: 'manhã' },
+//  lesson2:
+//   { materia: 'História',
+//     numeroEstudantes: 20,
+//     professor: 'Carlos',
+//     turno: 'noite' },
+//  lesson3:
+//   { materia: 'Matemática',
+//     numeroEstudantes: 10,
+//     professor: 'Maria Clara',
+//     turno: 'noite' } }
