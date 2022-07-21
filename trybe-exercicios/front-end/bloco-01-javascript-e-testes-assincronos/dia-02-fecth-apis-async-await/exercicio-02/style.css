@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(15, 41, 9, 1);
+  color: white;
+  /* text-align: center; */
+}
+
+.list {
+  padding-bottom: 5px;
+  font-size: larger;
+}
